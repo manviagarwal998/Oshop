@@ -1,0 +1,22 @@
+<div>
+<ng-container>
+
+<h1>ORDERS</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+  </thead> 
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>{{ item.product.title }}</td>
+      <td>{{ item.quantity }}</td>
+      <td>{{ item.totalPrice }}</td>
+    </tr>
+  </tbody> 
+</table>
+</ng-container>
+</div>
